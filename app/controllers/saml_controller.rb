@@ -44,7 +44,7 @@ class SamlController < ApplicationController
       settings.idp_entity_id = 'https://sts.windows.net/f99bd4e3-9b85-4899-87d0-75ad4473ef9f/'
       settings.idp_sso_target_url = 'https://login.microsoftonline.com/f99bd4e3-9b85-4899-87d0-75ad4473ef9f/saml2'
       settings.idp_cert = File.read('E:\testApp\app\assets\Azure_saml (1).pem')
-      settings.sp_entity_id = 'http://localhost:3000'
+      settings.sp_entity_id = 'http://localhost:3000/metadata'
       settings.assertion_consumer_service_url = 'http://localhost:3000/abs/saml/consume'
       settings.name_identifier_format = 'urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified'
       settings.single_logout_service_binding      = "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" # or :post, :redirect

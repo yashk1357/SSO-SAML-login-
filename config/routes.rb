@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   post 'abs/saml/consume', to: "saml#consume"
   get 'saml/initiate', to: "saml#initiate"
+  get 'saml/metadata', to: "saml#metadata"
 end
